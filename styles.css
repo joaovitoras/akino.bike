@@ -1,0 +1,58 @@
+html, body {
+  background: url('images/bg.png');
+}
+
+body {
+  background-image: linear-gradient(45deg, #0a325e 50%, transparent 50%),
+      linear-gradient(-45deg, #0a325e 50%, transparent 50%),
+      linear-gradient(45deg, transparent 50%, #0a325e 50%),
+      linear-gradient(-45deg, transparent 50%, #0a325e 50%);
+  background-size: 3px 3px;
+  background-position: 0 0, 1px 0, 1px -1px, 0px 1px;
+}
+
+img {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+
+h1 {
+  color: #e0dfdc;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 80px;
+  letter-spacing: .1em;
+  margin: 0 0 16.1px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  text-shadow:
+    0 -1px 0 #fff,    0 1px 0 #2e2e2e,  0 2px  0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828,  0 5px 0 #262626,  0 6px 0 #242424,  0 7px  0 #222,
+    0 8px 0 #202020,  0 9px 0 #1e1e1e,  0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+  animation: marquee 15s linear infinite;
+}
+
+.title {
+  overflow: hidden;
+}
+
+@media (max-width: 600px)
+{
+  img {
+    width: 100%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
