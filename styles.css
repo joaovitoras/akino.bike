@@ -59,6 +59,10 @@ h1 {
   img {
     width: 100%;
   }
+
+  h1 {
+    font-size: 54px;
+  }
 }
 
 @keyframes marquee {
